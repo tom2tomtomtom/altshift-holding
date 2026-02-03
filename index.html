@@ -131,33 +131,30 @@
         }
 
         .office {
-            font-size: 0.5rem;
-            font-weight: 300;
-            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
         }
 
         .office-city {
+            font-size: 0.5rem;
             font-weight: 500;
-            margin-bottom: 0.25rem;
         }
 
         .office a {
             color: white;
-            text-decoration: underline;
             transition: opacity 0.3s ease;
-            cursor: pointer;
-            pointer-events: auto;
-            position: relative;
-            z-index: 10;
         }
 
         .office a:hover {
             opacity: 0.7;
         }
 
-        .office-address {
-            margin-top: 0.25rem;
-            opacity: 0.8;
+        .office svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
         }
 
         /* Responsive */
@@ -180,12 +177,16 @@
             }
 
             .offices {
-                flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
             }
 
-            .office {
+            .office-city {
                 font-size: 0.45rem;
+            }
+
+            .office svg {
+                width: 14px;
+                height: 14px;
             }
         }
     </style>
@@ -236,18 +237,27 @@
         <div class="offices">
             <div class="office">
                 <div class="office-city">Melbourne</div>
-                <a href="mailto:hellomelbourne@altshift.com.au" target="_blank" rel="noopener noreferrer">hellomelbourne@altshift.com.au</a>
-                <div class="office-address">Level 10, 71 Gipps Street,<br>Collingwood VIC 3066</div>
+                <a href="mailto:hellomelbourne@altshift.com.au" aria-label="Email Melbourne">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
             </div>
             <div class="office">
                 <div class="office-city">Sydney</div>
-                <a href="mailto:hellosydney@altshift.com.au" target="_blank" rel="noopener noreferrer">hellosydney@altshift.com.au</a>
-                <div class="office-address">Suite 1.02, 139 Macquarie Street,<br>Sydney NSW 2000</div>
+                <a href="mailto:hellosydney@altshift.com.au" aria-label="Email Sydney">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
             </div>
             <div class="office">
                 <div class="office-city">Brisbane</div>
-                <a href="mailto:hellobrisbane@altshift.com.au" target="_blank" rel="noopener noreferrer">hellobrisbane@altshift.com.au</a>
-                <div class="office-address">Level 6, 200 Adelaide Street,<br>Brisbane City QLD 4000</div>
+                <a href="mailto:hellobrisbane@altshift.com.au" aria-label="Email Brisbane">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>

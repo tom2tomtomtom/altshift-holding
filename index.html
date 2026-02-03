@@ -69,12 +69,12 @@
         }
         
         /* Logo */
-        .logo {
-            font-size: 4rem;
-            font-weight: 300;
-            letter-spacing: 0.05em;
+        .logo-img {
+            max-width: 500px;
+            width: 90%;
+            height: auto;
             margin-bottom: 3rem;
-            text-transform: lowercase;
+            filter: brightness(0) invert(1); /* Makes logo white */
         }
         
         /* Construction Message */
@@ -124,8 +124,8 @@
         
         /* Responsive */
         @media (max-width: 768px) {
-            .logo {
-                font-size: 2.5rem;
+            .logo-img {
+                max-width: 300px;
             }
             
             .message {
@@ -160,7 +160,7 @@
     <!-- Content -->
     <div class="content">
         <!-- Logo -->
-        <div class="logo">alt/shift</div>
+        <img src="altshift-logo.jpg" alt="alt/shift" class="logo-img">
         
         <!-- Construction Message -->
         <div class="message">Website Under Construction</div>

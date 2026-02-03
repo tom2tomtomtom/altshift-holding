@@ -73,71 +73,72 @@
             max-width: 325px;
             width: 90%;
             height: auto;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
+            filter: brightness(0) invert(1);
         }
-        
+
         /* Construction Message */
         .message {
-            font-size: 1.5rem;
+            font-size: 0.75rem;
             font-weight: 300;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
-        
+
         /* Social Section */
         .social-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1.5rem;
+            gap: 0.75rem;
         }
-        
+
         .social-text {
-            font-size: 1rem;
+            font-size: 0.5rem;
             font-weight: 300;
             letter-spacing: 0.05em;
         }
-        
+
         .social-links {
             display: flex;
-            gap: 2rem;
+            gap: 1rem;
             align-items: center;
         }
-        
+
         .social-links a {
             color: white;
             text-decoration: none;
             transition: opacity 0.3s ease;
         }
-        
+
         .social-links a:hover {
             opacity: 0.7;
         }
-        
+
         .social-links svg {
-            width: 32px;
-            height: 32px;
+            width: 16px;
+            height: 16px;
             fill: white;
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .logo-img {
                 max-width: 195px;
             }
-            
+
             .message {
-                font-size: 1rem;
+                font-size: 0.5rem;
             }
-            
+
             .social-text {
-                font-size: 0.9rem;
+                font-size: 0.45rem;
             }
-            
+
             .social-links svg {
-                width: 28px;
-                height: 28px;
+                width: 14px;
+                height: 14px;
             }
         }
     </style>
@@ -179,6 +180,13 @@
                 <a href="https://au.linkedin.com/company/alt-shift/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:hellomelbourne@altshift.com.au" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
                     </svg>
                 </a>
             </div>
